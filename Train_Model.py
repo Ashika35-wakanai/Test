@@ -3,7 +3,7 @@ import numpy as np
 import os
 from PIL import Image
 
-path = "Buffe_Jp"
+path = "you"
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 
 
@@ -39,5 +39,6 @@ faces, labels = getImageName(path)
 recognizer.train(faces, np.array(labels))
 recognizer.write("model.yml")
 cv2.destroyAllWindows()
+
 
 print("Faces:", len(faces), "Labels:", labels)
