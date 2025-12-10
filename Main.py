@@ -22,7 +22,7 @@ while True:
     for (x, y ,w , h) in faces:
         number, conf = recognizer.predict(gray[y:y+h, x:x+w])
 
-        positive = f"{"Buffe:"}  {conf}%"
+        positive = f"{"you:"}  {conf}%"
         negative = f"{"Unknown"} {conf}%"
         if conf < 60:
             cv2.putText(frame, positive, (x, y - 40), cv2.FONT_HERSHEY_TRIPLEX, 1, (255, 255, 255), 2)
@@ -42,3 +42,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
