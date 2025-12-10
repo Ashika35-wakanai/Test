@@ -1,7 +1,7 @@
 import cv2
 
 
-dataSetPath = "Buffe_Jp"
+dataSetPath = "you"
 
 cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
@@ -44,4 +44,5 @@ while True:
 
 
 cap.release()
+
 cv2.destroyAllWindows()
